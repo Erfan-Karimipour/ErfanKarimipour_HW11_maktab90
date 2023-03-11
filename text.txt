@@ -1,0 +1,18 @@
+Priority:
+
+Low
+bg-gray-300 m-auto rounded-3xl cursor-pointer
+Medium
+bg-yellow-300 m-auto rounded-3xl cursor-pointer
+High
+bg-red-500 m-auto rounded-3xl cursor-pointer text-white
+
+
+Status:
+
+ToDo
+bg-red-500 m-auto rounded-3xl cursor-pointer text-white
+Doing
+bg-yellow-300 m-auto rounded-3xl cursor-pointer
+Done
+bg-green-700 m-auto rounded-3xl cursor-pointer text-white

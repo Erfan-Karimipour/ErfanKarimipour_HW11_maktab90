@@ -1,0 +1,120 @@
+import {El} from "./ElementCreator"
+
+export const SideFilter=()=>{ 
+    return(
+El({
+ element:`div`,
+ className:`w-1/4 h-full border-2 border-gray-300 sider bg-white p-5 px-8`,
+ child:[
+    El({
+        element:`div`,
+        className:`flex justify-between text-2xl mb-10`,
+        child:[
+            El({
+                element:`p`,
+                child:`Filters`
+            }),
+            El({
+                element:`ion-icon`,
+                name:`close-outline`,
+            })
+        ]
+    }),
+    El({
+        element:`p`,
+        className:`mb-4`,
+        child:`Priority:`
+    }),
+    El({
+        element:`select`,
+        className:`w-96 h-14 filterSelect mb-4 filterPriority`,
+        child:[
+            El({
+                element:`option`,
+                value:`All`,
+                child:`All`
+            }),
+            El({
+                element:`option`,
+                value:`Low`,
+                child:`Low`
+            }),
+            El({
+                element:`option`,
+                value:`Medium`,
+                child:`Medium`
+            }),
+            El({
+                element:`option`,
+                value:`High`,
+                child:`High`
+            }),
+        ]
+    }),
+    El({
+        element:`p`,
+        className:`mb-4`,
+        child:`Status:`
+    }),
+    El({
+        element:`select`,
+        className:`w-96 h-14 filterSelect mb-4 filterStatus`,
+        child:[
+            El({
+                element:`option`,
+                value:`All`,
+                child:`All`
+            }),
+            El({
+                element:`option`,
+                value:`Done`,
+                child:`Done`
+            }),
+            El({
+                element:`option`,
+                value:`Doing`,
+                child:`Doing`
+            }),
+            El({
+                element:`option`,
+                value:`To-Do`,
+                child:`To-Do`
+            }),
+        ]
+    }),
+    El({
+        element:`p`,
+        className:`mb-4`,
+        child:`Deadline:`
+    }),
+    El({
+        element:`select`,
+        className:`w-96 h-14 filterSelect mb-4 filterDeadline`,
+        child:[
+            El({
+                element:`option`,
+                value:`All`,
+                child:`All`
+            }),
+            El({
+                element:`option`,
+                value:`x`,
+                child:`x`
+            }),
+            El({
+                element:`option`,
+                value:`x`,
+                child:`x`
+            }),
+            El({
+                element:`option`,
+                value:`x`,
+                child:`x`
+            }),
+        ]
+    }),
+    
+ ]
+
+})
+)};

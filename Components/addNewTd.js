@@ -20,5 +20,5 @@ export function addNewTr(TaskName,Priority,Status,Deadline){
   <ion-icon name="eye-outline" class="bg-gray-600 text-white p-1 cursor-pointer"></ion-icon>
   </td>
     `
-    tbody.append(NewTr);
+    tbody.append(NewTd);
 }

@@ -4,14 +4,15 @@ export const modal=()=>{
     return(
         El({
             element:`section`,
+            className:`hidden hiddenModal`,
             child:[
                 El({
                     element:`div`,
-                    className:"w-full h-full opacity-30 bg-black absolute cursor-pointer Modal hidden"
+                    className:"w-full h-full opacity-30 bg-black absolute cursor-pointer ModalBg"
                 }),
                 El({
                     element:`div`,
-                    className:"w-1/3 h-3/5 bg-white rounded-md absolute hidden",
+                    className:"w-1/3 h-3/5 bg-white rounded-md absolute ",
                     child:[
                         El({
                             element:`p`,
@@ -22,11 +23,11 @@ export const modal=()=>{
                             element:`input`,
                             type:"text",
                             placeholder:"Task Name",
-                            className:"p-3 border-2 outline-blue-400 w-11/12 h-12 flex m-auto mt-3 mb-16 text-xl"
+                            className:"p-3 border-2 outline-blue-400 w-11/12 h-12 flex m-auto mt-3 mb-16 text-xl textInput"
                         }),
                         El({
                             element:`div`,
-                            className:"flex justify-around mb-12",
+                            className:" justify-around mb-12",
                             child:[
                                 El({
                                     element:'select',
@@ -89,12 +90,12 @@ export const modal=()=>{
                                     child:[
                                         El({
                                             element:`button`,
-                                            className:"justify-start border-2 border-blue-200 text-blue-500 p-2 px-3 rounded-md cursor-pointer",
+                                            className:"justify-start border-2 border-blue-200 text-blue-500 p-2 px-3 rounded-md cursor-pointer Cancel",
                                             child:`Cancel`
                                         }),
                                         El({
                                             element:`button`,
-                                            className:"justify-end border-2 bg-blue-600 text-white p-2 px-3 rounded-md cursor-pointer",
+                                            className:"justify-end border-2 bg-blue-600 text-white p-2 px-3 rounded-md cursor-pointer Save",
                                             child:`Save`
                                         })
                                     ]

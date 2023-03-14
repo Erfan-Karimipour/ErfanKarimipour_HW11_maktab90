@@ -5,6 +5,6 @@
             "@/*":["./*"]
         }
     },
-    "include": ["./*"],
+    "include": ["./*", "Components/openModal.js"],
     "exclude": ["node_modules"]
 }

@@ -41,6 +41,10 @@ child:[
             ]
         })
     }),
+    El({
+        element:`tbody`,
+        child:``
+    })
 ]
 })
 })

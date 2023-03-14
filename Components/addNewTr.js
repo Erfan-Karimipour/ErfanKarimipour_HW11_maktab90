@@ -1,6 +1,6 @@
 export function addNewTr(TaskName,Priority,Status,Deadline){
     let tbody=document.querySelector(`tbody`);
-    let NewTd=document.createElement(`tr`);
+    let addNewTr=document.createElement(`tr`);
     NewTd.innerHTML=`
     <td class="border-2 px-5 py-2 w-1/5" id=${Date.now()}>
     ${TaskName}
@@ -20,5 +20,5 @@ export function addNewTr(TaskName,Priority,Status,Deadline){
   <ion-icon name="eye-outline" class="bg-gray-600 text-white p-1 cursor-pointer"></ion-icon>
   </td>
     `
-    tbody.append(NewTd);
+    tbody.append(NewTr);
 }
